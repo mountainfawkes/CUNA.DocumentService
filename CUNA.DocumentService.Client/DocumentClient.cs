@@ -15,7 +15,7 @@ namespace CUNA.DocumentService.Client
 
         public static string ThirdPartyClient(Document payload)
         {
-            return "";
+            return "OK";
         }
     }
 }
