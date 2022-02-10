@@ -14,6 +14,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CUNA.DocumentService;
 using CUNA.DocumentService.Models;
+using CUNA.DocumentService.Client;
 
 namespace CUNA.DocumentService
 {
@@ -37,6 +38,7 @@ namespace CUNA.DocumentService
             });
             services.AddDbContext<DocumentServiceContext>(opt =>
                 opt.UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
+            services.AddSingleton<DocumentClient>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

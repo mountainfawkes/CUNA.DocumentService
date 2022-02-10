@@ -13,7 +13,7 @@ namespace CUNA.DocumentService.Client
 
         */
 
-        public static string PostDocument(Document payload)
+        public string PostDocument(Document payload)
         {
             return "OK";
         }
