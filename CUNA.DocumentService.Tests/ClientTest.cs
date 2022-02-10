@@ -18,7 +18,7 @@ namespace CUNA.DocumentService.Tests
         [Fact]
         public void ReturnsOK()
         {
-            var response = DocumentClient.ThirdPartyClient(payload);
+            var response = DocumentClient.PostDocument(payload);
             Assert.Equal("OK", response);
         }
     }

@@ -3,7 +3,7 @@ using CUNA.DocumentService.Models;
 
 namespace CUNA.DocumentService.Client
 {
-    public static class DocumentClient
+    public class DocumentClient
     {
         /*
         
@@ -13,7 +13,7 @@ namespace CUNA.DocumentService.Client
 
         */
 
-        public static string ThirdPartyClient(Document payload)
+        public static string PostDocument(Document payload)
         {
             return "OK";
         }
